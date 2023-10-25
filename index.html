@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand font-weight-bold mr-sm-5" href="#"
+            >Kafe <span style="color: #2ec970">Sans</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-5 nav-search-input border-0"
+                type="search"
+                placeholder="&#xF002; Search Menu"
+                style="
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                    'Helvetica Neue', sans-serif, FontAwesome;
+                "
+              />
+            </form>
+            <ul class="navbar-nav mt-2 mt-lg-0 mr-auto">
+              <li class="nav-item" id="nav-cart">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservation</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Acounting</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <div>
+                <img
+                  class="navbar-user-pic mr-3"
+                  src="./assets/sample-photo.jpeg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h6>Casey Kaspol</h6>
+                <span class="text-grey">Cashier</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main class="main-container">
+      <section class="pt-4">
+        <div class="order-list-container">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>Order List</h4>
+            <div class="mr-4">
+              <i class="fa fa-angle-left directional-arrow-icon"></i>
+              <i class="fa fa-angle-right directional-arrow-icon"></i>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center mr-3">
+              <div
+                class="bg-danger text-white d-inline-block mr-3 font-weight-bold d-flex align-items-center justify-content-center"
+                style="height: 43px; width: 43px"
+              >
+                T6
+              </div>
+              <div class="mr-3">
+                <div class="font-weight-bold mt-3">Mr. Willy</div>
+                <p>
+                  <small class="mr-4">2 items</small
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                      />
+                    </svg>
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-end">
+                <div
+                  class="rounded px-3 text-white d-inline-block d-flex align-items-center"
+                  style="background-color: #2ec970"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height=".8em"
+                    viewBox="0 0 448 512"
+                    style="fill: white; font-size: 12px"
+                    class="mr-1"
+                  >
+                    <path
+                      d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"
+                    />
+                  </svg>
+                  <span style="font-size: 13px">Ready</span>
+                </div>
+                <div class="mt-2">
+                  <span
+                    style="
+                      height: 11px;
+                      width: 11px;
+                      display: inline-block;
+                      background-color: #2ec970;
+                    "
+                  ></span>
+                  Ready to serve
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mr-3">
+              <div
+                class="bg-primary text-white d-inline-block mr-3 font-weight-bold d-flex align-items-center justify-content-center"
+                style="height: 45px; width: 45px"
+              >
+                T7
+              </div>
+              <div class="mr-3">
+                <div class="font-weight-bold mt-3">Mrs. Jane</div>
+                <p>
+                  <small class="mr-4">2 items</small
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                      />
+                    </svg>
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-end">
+                <div
+                  class="rounded bg-warning px-3 text-white d-inline-block d-flex align-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width=".8em"
+                    style="fill: white; font-size: 12px"
+                    class="mr-1"
+                  >
+                    <path
+                      d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                    />
+                  </svg>
+                  <span style="font-size: 13px">in progress</span>
+                </div>
+                <div class="mt-2">
+                  <span
+                    class="bg-warning"
+                    style="height: 11px; width: 11px; display: inline-block"
+                  ></span>
+                  In the kitchen
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mr-3">
+              <div
+                class="bg-warning text-white d-inline-block mr-3 font-weight-bold d-flex align-items-center justify-content-center"
+                style="height: 45px; width: 45px"
+              >
+                T7
+              </div>
+              <div class="mr-3">
+                <div class="font-weight-bold mt-3">Mrs. Aishy</div>
+                <p>
+                  <small class="mr-4">2 items</small
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                      />
+                    </svg>
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-end">
+                <div
+                  class="rounded bg-warning px-3 text-white d-inline-block d-flex align-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width=".8em"
+                    style="fill: white; font-size: 12px"
+                    class="mr-1"
+                  >
+                    <path
+                      d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                    />
+                  </svg>
+                  <span style="font-size: 13px">in progress</span>
+                </div>
+                <div class="mt-2">
+                  <span
+                    class="bg-warning"
+                    style="height: 11px; width: 11px; display: inline-block"
+                  ></span>
+                  In the kitchen
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories-container mt-3">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>Categories</h4>
+            <div class="mr-4">
+              <i class="fa fa-angle-left directional-arrow-icon"></i>
+              <i class="fa fa-angle-right directional-arrow-icon"></i>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <div
+              class="d-flex flex-column categories-items p-2 mr-3 categories-items categories-items-selected"
+            >
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">All Menu</span>
+              <span class="categories-items-remaining">72 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+            <div class="d-flex flex-column categories-items p-2 mr-3">
+              <img src="./assets/pngwing.com.png" alt="" />
+              <span style="font-size: 12px">Burger</span>
+              <span class="categories-items-remaining">12 items</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item-container mt-4">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>Special menu for you</h4>
+            <div class="mr-4"><i class="fa fa-sliders"></i> Filter</div>
+          </div>
+          <div class="row pr-4 mt-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 menu-item-col">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--recomend"
+                      >Recommendation</span
+                    >
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span><b style="font-size: 1.2rem">$17.22</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--offer">20% OFF</span>
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span
+                    ><b style="font-size: 1.2rem">$23.22</b
+                    ><small
+                      style="text-decoration: line-through"
+                      class="text-secondary ml-1"
+                      >$26.22</small
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span><b style="font-size: 1.2rem">$23.22</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--offer">20% OFF</span>
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span
+                    ><b style="font-size: 1.2rem">$23.22</b
+                    ><small
+                      style="text-decoration: line-through"
+                      class="text-secondary ml-1"
+                      >$26.22</small
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span><b style="font-size: 1.2rem">$23.22</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--recomend"
+                      >Recommendation</span
+                    >
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span><b style="font-size: 1.2rem">$17.22</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--recomend"
+                      >Recommendation</span
+                    >
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span><b style="font-size: 1.2rem">$17.22</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="card border-0">
+                <div class="card-body d-flex flex-column menu-item p-0">
+                  <div style="position: relative">
+                    <img
+                      src="/assets/burger.jpg"
+                      alt=""
+                      class="menu-item-img"
+                    />
+                    <span class="menu-item-overlay--offer">20% OFF</span>
+                  </div>
+
+                  <span class="text-secondary"
+                    >Tacos Salsa with Chicken Grill</span
+                  >
+                  <span
+                    ><b style="font-size: 1.2rem">$23.22</b
+                    ><small
+                      style="text-decoration: line-through"
+                      class="text-secondary ml-1"
+                      >$26.22</small
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-container pt-4 px-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <h4>Order Details</h4>
+          <div>
+            <i class="fa fa-sign-in mr-3" aria-hidden="true"></i>
+            <i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="mt-4 pb-3" style="border-bottom: 1px solid #eceff4">
+          <h6>Recipient: Yolanda Tamara</h6>
+          <span class="text-secondary">Mon, Oct 16, 2022, 12:00</span>
+          <p class="text-secondary">#08202200001</p>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-between pt-4 pb-3"
+          style="border-bottom: 1px solid #eceff4"
+        >
+          <div class="d-flex align-items-center">
+            <div class="cart-size-logo mr-2">2X</div>
+            <h6>Double Cheese Burger</h6>
+          </div>
+          <h6>$24.56</h6>
+        </div>
+        <div class="mt-3 pb-4" style="border-bottom: 1px solid #eceff4">
+          <div class="cart-items">
+            <p>Double Cheese Burger</p>
+            <p>$12.28</p>
+          </div>
+          <div class="cart-items">
+            <p>Double Cheese Burger</p>
+            <p>$12.28</p>
+          </div>
+          <div class="d-flex align-items-center flex-wrap">
+            <div class="cart-extra-items">Extra pickles + $0.72</div>
+            <div class="cart-extra-items">1 Remove lattuce</div>
+            <div class="cart-extra-items">1 Remove tomattos</div>
+          </div>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-between pt-4 pb-3"
+          style="border-bottom: 1px solid #eceff4"
+        >
+          <div class="d-flex align-items-center">
+            <div class="cart-size-logo mr-2">1X</div>
+            <h6>Package burger & french fries</h6>
+          </div>
+          <h6>$19.56</h6>
+        </div>
+        <div class="py-3" style="border-bottom: 1px solid #eceff4">
+          <div class="cart-items">
+            <p>Package burger & french fries</p>
+            <p>$19.28</p>
+          </div>
+          <div class="cart-extra-items">Extra pickles + $0.72</div>
+        </div>
+        <div class="py-3" style="border-bottom: 1px solid #eceff4">
+          <div class="cart-items">
+            <p class="text-secondary">Subtotal</p>
+            <p>$39.12</p>
+          </div>
+          <div class="cart-items">
+            <p class="text-secondary">Tax 10%</p>
+            <p>$1.05</p>
+          </div>
+          <div class="cart-items">
+            <p class="text-secondary">Discount 20%</p>
+            <p>$3.91</p>
+          </div>
+        </div>
+        <div class="cart-items pt-3 pb-5">
+          <h6>Total</h6>
+          <h6>$44.08</h6>
+        </div>
+        <button class="cart-pay-btn">Pay $44.08</button>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+
+    <!-- bootstrap js cdn -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
